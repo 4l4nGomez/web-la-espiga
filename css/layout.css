@@ -1,0 +1,80 @@
+/* ============================================================
+   layout.css — Sistema de layout y grid responsivo
+   ============================================================ */
+
+/* --- Contenedor principal --- */
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+  box-sizing: border-box;   /* Padding nunca desborda el ancho declarado */
+}
+
+
+.container--sm  { max-width: var(--container-sm);  }
+.container--md  { max-width: var(--container-md);  }
+.container--lg  { max-width: var(--container-lg);  }
+.container--2xl { max-width: var(--container-2xl); }
+
+/* --- Secciones --- */
+.section {
+  padding-block: var(--space-24);
+}
+
+.section--sm  { padding-block: var(--space-16); }
+.section--lg  { padding-block: var(--space-32); }
+
+/* --- Grid --- */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Auto-fit responsive */
+.grid--auto-sm { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid--auto-md { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.grid--auto-lg { grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); }
+
+/* --- Flex helpers --- */
+.flex        { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between{ display: flex; align-items: center; justify-content: space-between; }
+.flex-col    { display: flex; flex-direction: column; }
+.gap-2  { gap: var(--space-2); }
+.gap-4  { gap: var(--space-4); }
+.gap-6  { gap: var(--space-6); }
+.gap-8  { gap: var(--space-8); }
+
+/* --- Main layout con navbar --- */
+#main-content {
+  display: contents;
+}
+
+/* --- Breakpoints --- */
+@media (max-width: 1024px) {
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .container { padding-inline: var(--space-4); }
+  .section   { padding-block: var(--space-16); }
+
+  .grid--4,
+  .grid--3,
+  .grid--2 { grid-template-columns: 1fr; }
+
+  h1 { font-size: var(--text-4xl); }
+  h2 { font-size: var(--text-3xl); }
+  h3 { font-size: var(--text-2xl); }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: var(--text-3xl); }
+  h2 { font-size: var(--text-2xl); }
+}

@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="La Espiga de San Pablo del Monte — Panadería Rústica, Tlaxcala. Pan de masa madre, hojaldres crujientes y pan dulce horneado fresco cada mañana." />
+  <meta name="keywords"
+    content="panadería rústica, pan dulce, San Pablo del Monte, masa madre, hojaldre, repostería, La Espiga, pan fresco" />
+  <meta name="theme-color" content="#1F1D20" />
+  <meta property="og:title" content="La Espiga de San Pablo del Monte | Panadería Rústica en San Pablo del Monte" />
+  <meta property="og:description"
+    content="Pan dulce artesanal, horneado fresco cada mañana con ingredientes naturales. Visítanos en San Pablo del Monte." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/conchas.png" />
+  <title>La Espiga de San Pablo del Monte | Panadería Rústica</title>
+
+  <!-- Preload de LCP (Imágenes principales) -->
+  <link rel="preload" as="image" href="assets/images/pan-hero-escritorio.jpeg" media="(min-width: 768px)" />
+  <link rel="preload" as="image" href="assets/images/hero-conchas.png" media="(max-width: 767px)" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "La Espiga de San Pablo",
+    "image": "assets/images/conchas.png",
+    "description": "La Espiga de San Pablo del Monte— Panadería rústica, Tlaxcala. Pan dulce, masa madre y repostería de alta calidad.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Pablo del Monte",
+      "addressRegion": "Tlaxcala",
+      "addressCountry": "MX"
+    },
+    "telephone": "+522211846420",
+    "openingHours": "Mo-Su 06:00-21:30",
+    "url": "https://laespigapanaderia.com/"
+  }
+  </script>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/tokens.css?v=34.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css?v=34.0" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css?v=33.0" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <nav class="nav-inner" aria-label="Navegación principal">
+
+      <a href="#" class="nav-logo" aria-label="La Espiga — Inicio">
+        <img src="assets/images/logo.png" alt="La Espiga — Panadería rústica y crocante" class="nav-logo__img"
+          width="130" height="auto" />
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#productos" class="nav-link">Productos</a></li>
+        <li><a href="#promociones" class="nav-link">Promociones</a></li>
+        <li><a href="#resenas" class="nav-link">Reseñas</a></li>
+        <li><a href="#proceso" class="nav-link">Más +</a></li>
+      </ul>
+
+      <button id="menu-toggle" class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Menú móvil -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true" role="dialog" aria-label="Menú de navegación">
+
+      <!-- Marca de agua de fondo -->
+      <span class="mobile-nav__watermark" aria-hidden="true">ESPIGA</span>
+
+      <!-- Lista de enlaces enriquecida -->
+      <ul class="mobile-nav__list" role="list">
+        <li>
+          <a href="#productos" class="mobile-nav__link">
+            <span class="mobile-nav__num">01</span>
+            <div class="mobile-nav__text-group">
+              <span class="mobile-nav__title">Productos</span>
+              <span class="mobile-nav__desc">Nuestras delicias destacadas</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#promociones" class="mobile-nav__link">
+            <span class="mobile-nav__num">02</span>
+            <div class="mobile-nav__text-group">
+              <span class="mobile-nav__title">Promociones</span>
+              <span class="mobile-nav__desc">Ofertas de la casa</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#resenas" class="mobile-nav__link">
+            <span class="mobile-nav__num">03</span>
+            <div class="mobile-nav__text-group">
+              <span class="mobile-nav__title">Reseñas</span>
+              <span class="mobile-nav__desc">Opiniones de clientes</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#proceso" class="mobile-nav__link">
+            <span class="mobile-nav__num">04</span>
+            <div class="mobile-nav__text-group">
+              <span class="mobile-nav__title">Más</span>
+              <span class="mobile-nav__desc">Pedidos y contacto</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Footer del menú móvil -->
+      <div class="mobile-nav__footer">
+        <p class="mobile-nav__info">San Pablo del Monte · Abierto de 6:00 AM a 9:30 PM</p>
+        <div class="mobile-nav__socials">
+          <a href="https://www.facebook.com/share/1BwamGJ5jp/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/panaderialaespiga_spm?igsh=c21lYWczeWR3N2dp" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════
+         HERO — Dark Editorial
+    ═══════════════════════════════════════ -->
+    <section id="hero" aria-label="Hero principal">
+
+      <!-- Capas de efectos globales -->
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <!-- Watermark decorativo -->
+      <span class="hero__watermark" aria-hidden="true">ESPIGA</span>
+
+
+
+      <!-- DIAPOSITIVAS DEL CARRUSEL -->
+      <div class="hero__carousel">
+
+        <!-- Diapositiva Única: Póster Editorial -->
+        <div class="hero__slide is-active" data-slide="0">
+          <!-- DESKTOP CANVAS (Fondo de Carrusel) -->
+          <div class="hero__canvas desktop-only" aria-hidden="true">
+            <!-- Carrusel de fondos escritorio -->
+            <div class="hero__desktop-bg-carousel" aria-hidden="true">
+              <div class="hero__desktop-bg-slide is-active"
+                style="background-image: url('assets/images/pan-hero-escritorio.jpeg');"></div>
+              <div class="hero__desktop-bg-slide"
+                style="background-image: url('assets/images/conchas-hero-escritorio.jpeg');"></div>
+              <div class="hero__desktop-bg-slide"
+                style="background-image: url('assets/images/pan-caja-escritotio.jpeg');"></div>
+            </div>
+          </div>
+
+          <!-- DESKTOP STAGE -->
+          <div class="hero__stage desktop-only">
+            <div class="hero__nav-offset" aria-hidden="true"></div>
+            <div class="hero__center">
+              <div class="hero__editorial-top">
+                <h1 class="hero__sans-title">Descubre el sabor de La Espiga.</h1>
+              </div>
+              <div class="hero__editorial-bottom">
+                <p class="hero__sans-tag">El pan de San Pablo del Monte.</p>
+                <div class="hero__cta-row">
+                  <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer"
+                    class="btn-cta btn-cta--fill">
+                    <re-icon icon="bag-shopping" size="16"></re-icon>
+                    <span>Pedidos</span>
+                  </a>
+                  <a href="https://maps.app.goo.gl/vSNhqmHNCcSdULFH8" target="_blank" rel="noopener noreferrer"
+                    class="btn-cta btn-cta--ghost">
+                    <re-icon icon="map-point" size="16"></re-icon>
+                    <span>Cómo llegar</span>
+                  </a>
+                </div>
+                <!-- Redes sociales escritorio -->
+                <div class="hero__desktop-socials">
+                  <a href="https://www.facebook.com/share/1BwamGJ5jp/?mibextid=wwXIfr" target="_blank"
+                    rel="noopener noreferrer" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/panaderialaespiga_spm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                  </a>
+                  <a href="https://www.tiktok.com/@laespigadesanpablo" target="_blank" rel="noopener noreferrer"
+                    aria-label="TikTok">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v7.2c0 1.61-.6 3.14-1.71 4.27-1.1 1.11-2.61 1.71-4.22 1.71-1.6 0-3.12-.6-4.23-1.71-1.11-1.13-1.7-2.66-1.7-4.27 0-1.6.6-3.13 1.7-4.25 1.11-1.12 2.63-1.72 4.23-1.72.39 0 .78.03 1.17.1v4.05c-.38-.05-.77-.07-1.16-.07-1.02 0-1.95.42-2.64 1.12-.68.7-.68 1.83 0 2.53.69.7 1.62 1.12 2.64 1.12 1.02 0 1.95-.42 2.64-1.12.69-.7.68-1.83.68-2.53V.02z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOBILE LAYOUT (La Espiga Conchas) -->
+          <div class="hero__mobile-layout mobile-only">
+
+            <!-- Carrusel de fondos móviles -->
+            <div class="hero__mobile-bg-carousel" aria-hidden="true">
+              <div class="hero__mobile-bg-slide is-active"
+                style="background-image: url('assets/images/hero-conchas.png');"></div>
+              <div class="hero__mobile-bg-slide" style="background-image: url('assets/images/pan-hero.jpeg?v=2');">
+              </div>
+              <div class="hero__mobile-bg-slide" style="background-image: url('assets/images/pan-caja.jpeg');"></div>
+            </div>
+
+            <div class="hero__mobile-overlay" aria-hidden="true"></div>
+
+            <div class="hero__mobile-top">
+              <img class="hero__mobile-logo-img" src="assets/images/logo.png" alt="Logo La Espiga" />
+              <p class="hero__mobile-location">San Pablo del Monte</p>
+
+              <div class="hero__mobile-socials">
+                <a href="https://www.facebook.com/share/1BwamGJ5jp/?mibextid=wwXIfr" target="_blank"
+                  rel="noopener noreferrer" aria-label="Facebook">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" />
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/panaderialaespiga_spm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+                <a href="https://www.tiktok.com/@laespigadesanpablo" target="_blank" rel="noopener noreferrer"
+                  aria-label="TikTok">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v7.2c0 1.61-.6 3.14-1.71 4.27-1.1 1.11-2.61 1.71-4.22 1.71-1.6 0-3.12-.6-4.23-1.71-1.11-1.13-1.7-2.66-1.7-4.27 0-1.6.6-3.13 1.7-4.25 1.11-1.12 2.63-1.72 4.23-1.72.39 0 .78.03 1.17.1v4.05c-.38-.05-.77-.07-1.16-.07-1.02 0-1.95.42-2.64 1.12-.68.7-.68 1.83 0 2.53.69.7 1.62 1.12 2.64 1.12 1.02 0 1.95-.42 2.64-1.12.69-.7.68-1.83.68-2.53V.02z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero__mobile-bottom">
+              <div class="hero__cta-row hero__cta-row--mobile">
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer"
+                  class="btn-cta btn-cta--fill">
+                  <re-icon icon="bag-shopping" size="16"></re-icon>
+                  <span>Pedidos</span>
+                </a>
+                <a href="https://maps.app.goo.gl/vSNhqmHNCcSdULFH8" target="_blank" rel="noopener noreferrer"
+                  class="btn-cta btn-cta--ghost">
+                  <re-icon icon="map-point" size="16"></re-icon>
+                  <span>Cómo llegar</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ticker marquee (compartido / fijo) -->
+        <div class="hero__ticker" aria-hidden="true" role="presentation">
+          <div class="ticker__track">
+            <!-- Set 1 -->
+            <span class="ticker__item">Panadería</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">San Pablo del Monte</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Rústico</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Crocante</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Visita nuestras sucursales</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Primera calidad</span><span class="ticker__sep">✦</span>
+            <!-- Set 2 -->
+            <span class="ticker__item">Panadería</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">San Pablo del Monte</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Rústico</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Crocante</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Visita nuestras sucursales</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Primera calidad</span><span class="ticker__sep">✦</span>
+            <!-- Set 3 -->
+            <span class="ticker__item">Panadería</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">San Pablo del Monte</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Rústico</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Crocante</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Visita nuestras sucursales</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Primera calidad</span><span class="ticker__sep">✦</span>
+            <!-- Set 4 -->
+            <span class="ticker__item">Panadería</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">San Pablo del Monte</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Rústico</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Crocante</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Visita nuestras sucursales</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Primera calidad</span><span class="ticker__sep">✦</span>
+            <!-- Set 5 -->
+            <span class="ticker__item">Panadería</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">San Pablo del Monte</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Rústico</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Crocante</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Visita nuestras sucursales</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Primera calidad</span><span class="ticker__sep">✦</span>
+            <!-- Set 6 -->
+            <span class="ticker__item">Panadería</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">San Pablo del Monte</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Rústico</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Crocante</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Visita nuestras sucursales</span><span class="ticker__sep">✦</span>
+            <span class="ticker__item">Primera calidad</span><span class="ticker__sep">✦</span>
+          </div>
+        </div>
+
+    </section><!-- /hero -->
+
+
+
+
+
+
+    <!-- ═══════════════════════════════════════
+         PRODUCTOS DESTACADOS (Hecho especialmente para ti)
+    ═══════════════════════════════════════ -->
+    <section id="productos" class="productos-section" aria-label="Productos destacados y promociones">
+      <!-- Capa de ruido de grano animada -->
+      <div class="productos-section__grain" aria-hidden="true"></div>
+
+      <!-- Notas laterales de borde para pantallas grandes -->
+      <div class="productos-sidenote productos-sidenote--left" aria-hidden="true">
+        <span class="productos-sidenote__text">Selección de la casa</span>
+        <span class="productos-sidenote__line"></span>
+      </div>
+      <div class="productos-sidenote productos-sidenote--right" aria-hidden="true">
+        <span class="productos-sidenote__line"></span>
+        <span class="productos-sidenote__text">19.1218° N, 98.2045° W</span>
+      </div>
+
+      <div class="container container--reveal reveal">
+
+
+
+        <!-- ═══ CARRUSEL DE PRODUCTOS ═══ -->
+        <div class="prd-carousel" id="prd-carousel" aria-label="Carrusel de productos">
+
+          <!-- Cabecera de Producto (Ancho completo, evita saltos de línea) -->
+          <div class="prd-header-panel-container">
+            <div class="prd-text-panel prd-header-panel">
+              <div class="prd-text-slide active" data-prd="0">
+                <span class="prd-eyebrow"><re-icon icon="star-shine" size="12"
+                    style="margin-right: 4px; vertical-align: middle;"></re-icon>Todos los días</span>
+                <h3 class="prd-title">Empanada de Crema-Pastelera</h3>
+              </div>
+              <div class="prd-text-slide" data-prd="1">
+                <span class="prd-eyebrow"><re-icon icon="chef-hat" size="12"
+                    style="margin-right: 4px; vertical-align: middle;"></re-icon>Masa Hojaldrada</span>
+                <h3 class="prd-title">Croissant Chocolate</h3>
+              </div>
+              <div class="prd-text-slide" data-prd="2">
+                <span class="prd-eyebrow"><re-icon icon="star-shine" size="12"
+                    style="margin-right: 4px; vertical-align: middle;"></re-icon>Favoritos</span>
+                <h3 class="prd-title">Panquecito de Elote</h3>
+              </div>
+              <div class="prd-text-slide" data-prd="3">
+                <span class="prd-eyebrow"><re-icon icon="heart" size="12"
+                    style="margin-right: 4px; vertical-align: middle;"></re-icon>Nuevo</span>
+                <h3 class="prd-title">Chocoqueso</h3>
+              </div>
+              <div class="prd-text-slide" data-prd="4">
+                <span class="prd-eyebrow"><re-icon icon="leaf" size="12"
+                    style="margin-right: 4px; vertical-align: middle;"></re-icon>Especial</span>
+                <h3 class="prd-title">Empanada Hawaiana</h3>
+              </div>
+              <div class="prd-text-slide" data-prd="5">
+                <span class="prd-eyebrow"><re-icon icon="cookie" size="12"
+                    style="margin-right: 4px; vertical-align: middle;"></re-icon>Novedad</span>
+                <h3 class="prd-title">Muffin de chocolate</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Características (Izquierda) -->
+          <div class="prd-features-col">
+            <div class="prd-text-panel">
+
+              <!-- Features Slide 0: Empanada crema  -->
+              <div class="prd-text-slide active" data-prd="0">
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Crema Pastelera</h4>
+                    <p>Suave, sedosa y hecha a fuego lento con vainilla pura para un sabor auténtico.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="droplet" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Hojaldre Crujiente</h4>
+                    <p>Capas finas elaboradas con mantequilla premium que se deshacen en cada bocado.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="chef-hat" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Toque de Azúcar</h4>
+                    <p>Corteza espolvoreada ligeramente con azúcar y canela para el balance perfecto.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="star-sparkle" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Features Slide 1: Country Sourdough -->
+              <div class="prd-text-slide" data-prd="1">
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Mantequilla Pura</h4>
+                    <p>Capas finas y doradas de hojaldre 100% mantequilla de la más alta calidad.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="star-shine" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Exterior Crujiente</h4>
+                    <p>Horneado a la perfección cada mañana para lograr esa textura escamosa ideal.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="fire" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Corazón de Chocolate</h4>
+                    <p>Relleno de chocolate semi-amargo que se funde en tu boca aportando un dulzor profundo.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="heart" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Features Slide 2: Panquecito de Elote -->
+              <div class="prd-text-slide" data-prd="2">
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Elote Natural</h4>
+                    <p>Granos tiernos seleccionados y molidos que aportan su dulzor fresco y rústico.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="leaf" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Leche Condensada</h4>
+                    <p>Nuestra receta secreta que brinda una humedad y suavidad inigualables al panqué.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="droplet" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Tradición Casera</h4>
+                    <p>Un clásico horneado pacientemente con textura aterciopelada y sutil aroma a hogar.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="chef-hat" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Features Slide 3: Chocoqueso -->
+              <div class="prd-text-slide" data-prd="3">
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Cacao Premium</h4>
+                    <p>Pan elaborado con fina cocoa oscura para una experiencia rica y verdaderamente intensa.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="cookie" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Centro Cremoso</h4>
+                    <p>Generoso relleno fundido de queso crema que equilibra perfectamente el sabor.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="heart" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Fusión Ideal</h4>
+                    <p>El contraste exquisito entre lo dulce y lo salado, horneado fresco al amanecer.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="star-shine" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Features Slide 4: Empanada Hawaiana -->
+              <div class="prd-text-slide" data-prd="4">
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Piña Dulce</h4>
+                    <p>Jugosos trozos de fruta que brindan el clásico y vibrante contraste tropical.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="leaf" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Jamón Ahumado</h4>
+                    <p>Rebanadas seleccionadas de jamón de pierna que aportan un toque salado y profundo.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="fire" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Hojaldre Dorado</h4>
+                    <p>Crujiente masa artesanal horneada cada día hasta obtener un brillante color oro.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="chef-hat" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Features Slide 5: Muffin de chocolate -->
+              <div class="prd-text-slide" data-prd="5">
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Chispas Fundidas</h4>
+                    <p>Abundantes gotas de chocolate semi-amargo que se derriten deliciosamente al calor del horno.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="sparkles" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Cocoa Intensa</h4>
+                    <p>Masa enriquecida con cacao puro para un color profundo y una experiencia irresistible.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="coffee" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="prd-feature-item prd-feature-item--left">
+                  <div class="prd-feature-text">
+                    <h4>Miga Extremadamente Suave</h4>
+                    <p>Un balance perfecto de ingredientes que resulta en una humedad y esponjosidad únicas.</p>
+                  </div>
+                  <div class="prd-feature-icon-badge">
+                    <div class="prd-feature-icon-inner">
+                      <re-icon icon="cloud" size="18"></re-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Columna Visual CENTRO (solo las tarjetas) -->
+          <div class="prd-center-col">
+            <div class="prd-cards-stage">
+
+              <article class="prd-card" data-prd-card="0">
+                <div class="prd-card__img-wrap">
+                  <img src="assets/images/empanada.png" alt="Empanada Artesanal" loading="lazy" />
+                </div>
+              </article>
+
+              <article class="prd-card prd-card--active" data-prd-card="1">
+                <div class="prd-card__img-wrap">
+                  <img src="assets/images/Crosaints.png" alt="Crosaints" loading="lazy" />
+                </div>
+              </article>
+
+              <article class="prd-card" data-prd-card="2">
+                <div class="prd-card__img-wrap">
+                  <img src="assets/images/elote.png" alt="Panquecito de Elote" loading="lazy" />
+                </div>
+              </article>
+
+              <article class="prd-card" data-prd-card="3">
+                <div class="prd-card__img-wrap">
+                  <img src="assets/images/choco.png" alt="Chocoqueso" loading="lazy" />
+                </div>
+              </article>
+
+              <article class="prd-card" data-prd-card="4">
+                <div class="prd-card__img-wrap">
+                  <img src="assets/images/Empanada-hawaiana.png" alt="Empanada Hawaiana" loading="lazy" />
+                </div>
+              </article>
+
+              <article class="prd-card" data-prd-card="5">
+                <div class="prd-card__img-wrap">
+                  <img src="assets/images/muffin-choco.png" alt="Muffin de chocolate" loading="lazy" />
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Columna Información (Derecha) -->
+          <div class="prd-info-col">
+
+            <!-- Texto dinámico DERECHA -->
+            <div class="prd-text-panel">
+              <div class="prd-text-slide active" data-prd="0">
+                <div class="prd-price">$10.00</div>
+                <p class="prd-desc">El contraste perfecto entre lo crujiente y lo cremoso. Un clásico que nunca falla.
+                </p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer"
+                  class="prd-order-btn"><re-icon icon="cart-shopping" size="16"
+                    style="margin-right: 6px;"></re-icon>Ordenar <span>→</span></a>
+              </div>
+              <div class="prd-text-slide" data-prd="1">
+                <div class="prd-price">$9.00</div>
+                <p class="prd-desc">Hojaldre de mantequilla con capas finas y doradas, exterior crujiente e interior
+                  suave, ligero y lleno de sabor.
+                  <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer"
+                    class="prd-order-btn"><re-icon icon="cart-shopping" size="16"
+                      style="margin-right: 6px;"></re-icon>Ordenar <span>→</span></a>
+              </div>
+              <div class="prd-text-slide" data-prd="2">
+                <div class="prd-price">$15.00</div>
+                <p class="prd-desc">Elaborado con granos de elote tierno y leche condensada, con una textura suave,
+                  húmeda y un delicado sabor</p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer"
+                  class="prd-order-btn"><re-icon icon="cart-shopping" size="16"
+                    style="margin-right: 6px;"></re-icon>Ordenar <span>→</span></a>
+              </div>
+              <div class="prd-text-slide" data-prd="3">
+                <div class="prd-price">$15.00</div>
+                <p class="prd-desc">Fusión de suave crema de queso y pan de chocolate con cocoa, creando un contraste de
+                  sabores cremosos e intensos en cada bocado</p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer"
+                  class="prd-order-btn"><re-icon icon="cart-shopping" size="16"
+                    style="margin-right: 6px;"></re-icon>Ordenar <span>→</span></a>
+              </div>
+              <div class="prd-text-slide" data-prd="4">
+                <div class="prd-price">$20.00</div>
+                <p class="prd-desc">Empanada hojaldrada rellena de piña y jamón ahumado, horneada al día con
+                  una corteza dorada y crujiente.</p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer"
+                  class="prd-order-btn"><re-icon icon="cart-shopping" size="16"
+                    style="margin-right: 6px;"></re-icon>Ordenar <span>→</span></a>
+              </div>
+              <div class="prd-text-slide" data-prd="5">
+                <div class="prd-price">$15.00</div>
+                <p class="prd-desc">Rico panquecito de chocolate colmado de chispas fundidas y elaborado con cocoa
+                  para una experiencia achocolatada e intensa en cada bocado.</p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer"
+                  class="prd-order-btn"><re-icon icon="cart-shopping" size="16"
+                    style="margin-right: 6px;"></re-icon>Ordenar <span>→</span></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ═══ CARRUSEL DE PRODUCTOS (Móvil) ═══ -->
+        <div class="prd-mobile-carousel" role="region" aria-label="Carrusel de productos destacados">
+          <div class="prd-mob-slider" role="list">
+
+            <!-- Card 0: Empanada de Crema-Pastelera -->
+            <div class="prd-mob-card-wrapper" role="listitem">
+              <article class="prd-mob-card">
+                <span class="prd-mob-card__eyebrow">Todos los días</span>
+                <h3 class="prd-mob-card__title">Empanada de Crema-Pastelera</h3>
+
+                <div class="prd-mob-card__img-container">
+                  <img src="assets/images/empanada.png" alt="Empanada de Crema-Pastelera" loading="lazy"
+                    decoding="async" />
+                </div>
+
+                <p class="prd-mob-card__desc">El contraste perfecto entre lo crujiente y lo cremoso. Un clásico que
+                  nunca falla.</p>
+
+                <div class="prd-mob-card__features">
+                  <span class="prd-mob-card__feature-tag" title="Crema Pastelera">
+                    <re-icon icon="heart" size="14"></re-icon>
+                    <span>Crema Pastelera</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Hojaldre Crujiente">
+                    <re-icon icon="chef-hat" size="14"></re-icon>
+                    <span>Hojaldre</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Toque de Azúcar">
+                    <re-icon icon="star-sparkle" size="14"></re-icon>
+                    <span>Azúcar</span>
+                  </span>
+                </div>
+
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="prd-mob-card__btn"
+                  aria-label="Ordenar Empanada de Crema-Pastelera por diez pesos">
+                  <re-icon icon="cart-shopping" size="16"></re-icon>
+                  <span>Ordenar por $10.00</span>
+                </a>
+              </article>
+            </div>
+
+            <!-- Card 1: Croissant Chocolate -->
+            <div class="prd-mob-card-wrapper" role="listitem">
+              <article class="prd-mob-card">
+                <span class="prd-mob-card__eyebrow">Masa Hojaldrada</span>
+                <h3 class="prd-mob-card__title">Croissant Chocolate</h3>
+
+                <div class="prd-mob-card__img-container">
+                  <img src="assets/images/Crosaints.png" alt="Croissant Chocolate" loading="lazy" decoding="async" />
+                </div>
+
+                <p class="prd-mob-card__desc">Hojaldre de mantequilla con capas finas y doradas, exterior crujiente e
+                  interior suave, ligero y lleno de sabor.</p>
+
+                <div class="prd-mob-card__features">
+                  <span class="prd-mob-card__feature-tag" title="Mantequilla Pura">
+                    <re-icon icon="star-shine" size="14"></re-icon>
+                    <span>Mantequilla</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Exterior Crujiente">
+                    <re-icon icon="fire" size="14"></re-icon>
+                    <span>Crujiente</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Corazón de Chocolate">
+                    <re-icon icon="heart" size="14"></re-icon>
+                    <span>Relleno</span>
+                  </span>
+                </div>
+
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="prd-mob-card__btn"
+                  aria-label="Ordenar Croissant Chocolate por $9.00">
+                  <re-icon icon="cart-shopping" size="16"></re-icon>
+                  <span>Ordenar por $9.00</span>
+                </a>
+              </article>
+            </div>
+
+            <!-- Card 2: Panquecito de Elote -->
+            <div class="prd-mob-card-wrapper" role="listitem">
+              <article class="prd-mob-card">
+                <span class="prd-mob-card__eyebrow">Favoritos</span>
+                <h3 class="prd-mob-card__title">Panquecito de Elote</h3>
+
+                <div class="prd-mob-card__img-container">
+                  <img src="assets/images/elote.png" alt="Panquecito de Elote" loading="lazy" decoding="async" />
+                </div>
+
+                <p class="prd-mob-card__desc">Elaborado con granos de elote tierno y leche condensada, con una textura
+                  suave, húmeda y un delicado sabor</p>
+
+                <div class="prd-mob-card__features">
+                  <span class="prd-mob-card__feature-tag" title="Elote Natural">
+                    <re-icon icon="leaf" size="14"></re-icon>
+                    <span>Elote Natural</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Leche Condensada">
+                    <re-icon icon="droplet" size="14"></re-icon>
+                    <span>Lechera</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Tradición Casera">
+                    <re-icon icon="chef-hat" size="14"></re-icon>
+                    <span>Casero</span>
+                  </span>
+                </div>
+
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="prd-mob-card__btn"
+                  aria-label="Ordenar Panquecito de Elote por $15.00">
+                  <re-icon icon="cart-shopping" size="16"></re-icon>
+                  <span>Ordenar por $15.00</span>
+                </a>
+              </article>
+            </div>
+
+            <!-- Card 3: Chocoqueso -->
+            <div class="prd-mob-card-wrapper" role="listitem">
+              <article class="prd-mob-card">
+                <span class="prd-mob-card__eyebrow">Nuevo</span>
+                <h3 class="prd-mob-card__title">Chocoqueso</h3>
+
+                <div class="prd-mob-card__img-container">
+                  <img src="assets/images/choco.png" alt="Chocoqueso" loading="lazy" decoding="async" />
+                </div>
+
+                <p class="prd-mob-card__desc">Fusión de suave crema de queso y pan de chocolate con cocoa, creando un
+                  contraste de sabores cremosos e intensos en cada bocado</p>
+
+                <div class="prd-mob-card__features">
+                  <span class="prd-mob-card__feature-tag" title="Cacao Premium">
+                    <re-icon icon="cookie" size="14"></re-icon>
+                    <span>Cacao</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Centro Cremoso">
+                    <re-icon icon="heart" size="14"></re-icon>
+                    <span>Queso Crema</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Fusión Ideal">
+                    <re-icon icon="star-shine" size="14"></re-icon>
+                    <span>Fusión</span>
+                  </span>
+                </div>
+
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="prd-mob-card__btn"
+                  aria-label="Ordenar Chocoqueso por $15.00">
+                  <re-icon icon="cart-shopping" size="16"></re-icon>
+                  <span>Ordenar por $15.00</span>
+                </a>
+              </article>
+            </div>
+
+            <!-- Card 4: Empanada Hawaiana -->
+            <div class="prd-mob-card-wrapper" role="listitem">
+              <article class="prd-mob-card">
+                <span class="prd-mob-card__eyebrow">Especial</span>
+                <h3 class="prd-mob-card__title">Empanada Hawaiana</h3>
+
+                <div class="prd-mob-card__img-container">
+                  <img src="assets/images/Empanada-hawaiana.png" alt="Empanada Hawaiana" loading="lazy"
+                    decoding="async" />
+                </div>
+
+                <p class="prd-mob-card__desc">Empanada hojaldrada rellena de piña y jamón ahumado, horneada al día con
+                  una corteza dorada y crujiente.</p>
+
+                <div class="prd-mob-card__features">
+                  <span class="prd-mob-card__feature-tag" title="Piña Dulce">
+                    <re-icon icon="leaf" size="14"></re-icon>
+                    <span>Piña</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Jamón Ahumado">
+                    <re-icon icon="fire" size="14"></re-icon>
+                    <span>Jamón</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Hojaldre Dorado">
+                    <re-icon icon="chef-hat" size="14"></re-icon>
+                    <span>Hojaldre</span>
+                  </span>
+                </div>
+
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="prd-mob-card__btn"
+                  aria-label="Ordenar Empanada Hawaiana por $20.00">
+                  <re-icon icon="cart-shopping" size="16"></re-icon>
+                  <span>Ordenar por $20.00</span>
+                </a>
+              </article>
+            </div>
+
+            <!-- Card 5: Muffin de chocolate -->
+            <div class="prd-mob-card-wrapper" role="listitem">
+              <article class="prd-mob-card">
+                <span class="prd-mob-card__eyebrow">Novedad</span>
+                <h3 class="prd-mob-card__title">Muffin de chocolate</h3>
+
+                <div class="prd-mob-card__img-container">
+                  <img src="assets/images/muffin-choco.png" alt="Muffin de chocolate" loading="lazy" decoding="async" />
+                </div>
+
+                <p class="prd-mob-card__desc">Rico panquecito de chocolate colmado de chispas fundidas y elaborado con
+                  cocoa para una experiencia achocolatada e intensa en cada bocado.</p>
+
+                <div class="prd-mob-card__features">
+                  <span class="prd-mob-card__feature-tag" title="Chispas Fundidas">
+                    <re-icon icon="sparkles" size="14"></re-icon>
+                    <span>Chispas</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Cocoa Intensa">
+                    <re-icon icon="coffee" size="14"></re-icon>
+                    <span>Cocoa</span>
+                  </span>
+                  <span class="prd-mob-card__feature-tag" title="Miga Extremadamente Suave">
+                    <re-icon icon="cloud" size="14"></re-icon>
+                    <span>Miga Suave</span>
+                  </span>
+                </div>
+
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="prd-mob-card__btn"
+                  aria-label="Ordenar Muffin de chocolate por $15.00">
+                  <re-icon icon="cart-shopping" size="16"></re-icon>
+                  <span>Ordenar por $15.00</span>
+                </a>
+              </article>
+            </div>
+
+          </div>
+
+          <!-- Indicadores de puntos -->
+          <div class="prd-mob-dots" role="tablist" aria-label="Seleccionar producto a mostrar">
+            <span class="prd-mob-dot active" role="tab" aria-selected="true"
+              aria-label="Ver Empanada de Crema-Pastelera" data-mob-idx="0"></span>
+            <span class="prd-mob-dot" role="tab" aria-selected="false" aria-label="Ver Croissant Chocolate"
+              data-mob-idx="1"></span>
+            <span class="prd-mob-dot" role="tab" aria-selected="false" aria-label="Ver Panquecito de Elote"
+              data-mob-idx="2"></span>
+            <span class="prd-mob-dot" role="tab" aria-selected="false" aria-label="Ver Chocoqueso"
+              data-mob-idx="3"></span>
+            <span class="prd-mob-dot" role="tab" aria-selected="false" aria-label="Ver Empanada Hawaiana"
+              data-mob-idx="4"></span>
+            <span class="prd-mob-dot" role="tab" aria-selected="false" aria-label="Ver Muffin de chocolate"
+              data-mob-idx="5"></span>
+          </div>
+        </div>
+    </section>
+
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         CALIDAD E INGREDIENTES + PROMOCIONES (Unified Section)
+    ═══════════════════════════════════════ -->
+    <section id="promociones" class="calidad-promos-section" aria-label="Nuestra calidad e ingredientes y promociones">
+
+      <!-- PARTE UNIFICADA: PROMOCIONES / OFERTAS ACORDE A LA CATEGORÍA -->
+      <div class="promos-slider-wrapper-unified">
+
+        <!-- PARTE SUPERIOR (AHORA DENTRO DEL CONTENEDOR UNIFICADO): CABECERA Y CATEGORÍAS -->
+        <div class="calidad-top-container container container--reveal reveal">
+
+          <!-- Encabezado de la sección -->
+          <div class="section-header text-center">
+            <span class="section-header__eyebrow">Ofertas de la casa</span>
+            <h2 class="section-header__title-main">Promociones</h2>
+          </div>
+
+          <!-- TABS DE CATEGORÍA -->
+          <div class="calidad__categories">
+            <div class="calidad__cat-item active" data-cat-trigger="0">
+              <span class="calidad__cat-name">Rústicos</span>
+              <span class="calidad__cat-count">12</span>
+            </div>
+            <div class="calidad__cat-item" data-cat-trigger="1">
+              <span class="calidad__cat-name">Dulce</span>
+              <span class="calidad__cat-count">24</span>
+            </div>
+            <div class="calidad__cat-item" data-cat-trigger="2">
+              <span class="calidad__cat-name">Repostería</span>
+              <span class="calidad__cat-count">8</span>
+            </div>
+            <div class="calidad__cat-item" data-cat-trigger="3">
+              <span class="calidad__cat-name">Especiales</span>
+              <span class="calidad__cat-count">6</span>
+            </div>
+            <div class="calidad__cat-item" data-cat-trigger="4">
+              <span class="calidad__cat-name">Online</span>
+              <span class="calidad__cat-count">1</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nota lateral vertical (Margen izquierdo) -->
+        <div class="promos-sidenote" aria-hidden="true">
+          <span>UNICOS ✦ MASA MADRE ✦ CALIDAD ✦ LA ESPIGA</span>
+        </div>
+
+        <div class="container">
+          <div class="promos-slider-container">
+
+            <!-- Contenedor Visual (Mockup / Tarjeta flotante a la izquierda) -->
+            <div class="promos-visual-area">
+              <div class="promo-mockup-wrapper">
+
+                <!-- Imagen 1: Sourdough (Rústicos) -->
+                <div class="promo-mockup-img is-active" data-offer-visual="0">
+                  <img src="assets/images/PineTools.com_imagen.png_2K_202607071208.png" alt="Country Sourdough Rústico"
+                    class="offer-mockup__card is-floating-asset" loading="lazy" decoding="async" />
+                </div>
+
+                <!-- Imagen 2: Bagel / Combo (Dulce) -->
+                <div class="promo-mockup-img" data-offer-visual="1">
+                  <img src="assets/images/animaión 3D.png" alt="Combo Mañanero Dulce"
+                    class="offer-mockup__card is-floating-asset" loading="lazy" decoding="async" />
+                </div>
+
+
+
+
+
+
+                <!-- Imagen 3: Pasticetas (Repostería) -->
+                <div class="promo-mockup-img" data-offer-visual="2">
+                  <img src="assets/images/pasticeta.png" alt="Pasticetas de Repostería"
+                    class="offer-mockup__card offer-mockup__card--reposteria is-floating-asset" loading="lazy"
+                    decoding="async" />
+                </div>
+
+                <!-- Imagen 4: Pizza (Especiales) -->
+                <div class="promo-mockup-img" data-offer-visual="3">
+                  <img src="assets/images/pizza.png" alt="Pizza Artesanal Especial"
+                    class="offer-mockup__card offer-mockup__card--pizza is-floating-asset" loading="lazy"
+                    decoding="async" />
+                </div>
+
+                <div class="promo-mockup-img" data-offer-visual="4">
+                  <img src="assets/images/descuento.png" alt="Bienvenida 10% Descuento"
+                    class="offer-mockup__card is-floating-asset" loading="lazy" decoding="async" />
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Contenedor de Texto (Centro) -->
+            <div class="promos-content-area">
+
+              <!-- Slide de Texto 1 (Rústicos) -->
+              <div class="promo-content-slide is-active" data-offer-content="0">
+                <span class="offer-step-label">Masa Madre</span>
+                <h3 class="offer-title">Pan Rústico</h3>
+                <h5>3 Rústicos por $ 39.00</h5>
+                <p class="offer-desc">Elige tus favoritos: arándano, higo o ajo. Pan artesanal de
+                  masa madre con una corteza dorada y sabor auténtico, elaborado en La Espiga.</p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="offer-btn">Ordenar
+                  Promoción</a>
+              </div>
+
+              <!-- Slide de Texto 2 (Dulce) -->
+              <div class="promo-content-slide" data-offer-content="1">
+                <span class="offer-step-label">Dulce · Combo Diario</span>
+                <h3 class="offer-title">Combo Mañanero</h3>
+                <h5> Concha + un café americano por tan solo $ 12.00</h5>
+                <p class="offer-desc"> El desayuno perfecto para comenzar tu día con el sabor de La Espiga.</p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="offer-btn">Pedir
+                  Combo</a>
+              </div>
+
+              <!-- Slide de Texto 3 (Repostería) -->
+              <div class="promo-content-slide" data-offer-content="2">
+                <span class="offer-step-label">Repostería · Clásicos</span>
+                <h3 class="offer-title">Pasticetas</h3>
+                <h5>Bolsa $ 20.00</h5>
+                <p class="offer-desc">Llévate una bolsa con 10 piezas ideales para compartir, acompañar tu café
+                  o disfrutar en cualquier momento del día..</p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="offer-btn">Ordenar
+                  Repostería</a>
+              </div>
+
+              <!-- Slide de Texto 4 (Especiales) -->
+              <div class="promo-content-slide" data-offer-content="3">
+                <span class="offer-step-label">Especiales · Promoción</span>
+                <h3 class="offer-title">Mini Pizza</h3>
+                <h5>Disfruta una mini pizza a $20.00</h5>
+                <p class="offer-desc">Ideal para un antojo,
+                  lunch o compartir un momento especial.</p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="offer-btn">Ordenar
+                  Promoción</a>
+              </div>
+
+              <!-- Slide de Texto 5 (Bienvenida) -->
+              <div class="promo-content-slide" data-offer-content="4">
+                <span class="offer-step-label">Promoción Online · Bienvenida</span>
+                <h3 class="offer-title">10% en tu primera compra</h3>
+                <p class="offer-desc">
+                  Haz tu pedido desde nuestra página y recibe un 10% de descuento en tu
+                  primera compra. Muestra el código ESPIGA10 al ordenar por WhatsApp.
+                </p>
+                <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="offer-btn">Obtener
+                  Cupón: MASA10</a>
+              </div>
+
+            </div>
+
+            <!-- Indicadores Verticales Numerados (Derecha) -->
+            <div class="promos-nav-indicators" aria-label="Seleccionar oferta">
+              <button class="offer-nav-dot is-active" data-offer-trigger="0" aria-label="Ver rústicos">1</button>
+              <button class="offer-nav-dot" data-offer-trigger="1" aria-label="Ver dulce">2</button>
+              <button class="offer-nav-dot" data-offer-trigger="2" aria-label="Ver repostería">3</button>
+              <button class="offer-nav-dot" data-offer-trigger="3" aria-label="Ver especiales">4</button>
+              <button class="offer-nav-dot" data-offer-trigger="4" aria-label="Ver bienvenida">5</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         RESEÑAS — CARRUSEL
+    ═══════════════════════════════════════ -->
+    <section id="resenas" class="rev-carousel-section" aria-label="Reseñas y Experiencias">
+
+      <!-- Decoración de fondo -->
+      <div class="rev-bg-dot-grid"></div>
+
+      <div class="rev-carousel-inner">
+
+        <!-- LADO IZQUIERDO: Texto animado -->
+        <div class="rev-text-col">
+
+          <p class="rev-eyebrow">Lo que dicen de nosotros</p>
+
+          <!-- Slide 1 -->
+          <div class="rev-slide active" data-rev="0">
+            <div class="rev-stars">★★★★<span class="star-dim">★</span></div>
+            <h2 class="rev-name">Yesica Martínez</h2>
+            <blockquote class="rev-quote">
+              "El pan muy rico y suavecito.<br>¡Altamente recomendado!"
+            </blockquote>
+            <span class="rev-meta">Local Guide · Hace 2 meses</span>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="rev-slide" data-rev="1">
+            <div class="rev-stars">★★★★★</div>
+            <h2 class="rev-name">Usuario de Google</h2>
+            <blockquote class="rev-quote">
+              "Buen pan a buen precio.<br>Recién salido del horno, ¡increíble!"
+            </blockquote>
+            <span class="rev-meta">Local Guide · Hace un mes</span>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="rev-slide" data-rev="2">
+            <div class="rev-stars">★★★★<span class="star-dim">★</span></div>
+            <h2 class="rev-name">Santos Martínez</h2>
+            <blockquote class="rev-quote">
+              "Siempre deliciosos y calientitos.<br>La calidad es inigualable."
+            </blockquote>
+            <span class="rev-meta">Cliente frecuente · Hace un año</span>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="rev-slide" data-rev="3">
+            <div class="rev-stars">★★★★★</div>
+            <h2 class="rev-name">Cliente Feliz</h2>
+            <blockquote class="rev-quote">
+              "Las conchas son una delicia<br>que no te puedes perder."
+            </blockquote>
+            <span class="rev-meta">@cliente_feliz · Hace 12h</span>
+          </div>
+
+          <!-- Controles -->
+          <div class="rev-controls">
+            <button class="rev-btn-prev" id="rev-prev" aria-label="Anterior">‹</button>
+            <div class="rev-dots" id="rev-dots">
+              <span class="rev-dot active" data-goto="0"></span>
+              <span class="rev-dot" data-goto="1"></span>
+              <span class="rev-dot" data-goto="2"></span>
+              <span class="rev-dot" data-goto="3"></span>
+            </div>
+            <button class="rev-btn-next" id="rev-next" aria-label="Siguiente">›</button>
+          </div>
+
+        </div>
+
+        <!-- LADO DERECHO: Avatar + decoración -->
+        <div class="rev-avatar-col">
+
+          <!-- Avatar 1 -->
+          <div class="rev-avatar-wrap active" data-rev="0">
+            <div class="rev-avatar-ring">
+              <div class="rev-avatar-circle" style="background: linear-gradient(135deg, #0F6F47, #08492E);">Y</div>
+            </div>
+            <div class="rev-float rev-float-1">🥐</div>
+            <div class="rev-float rev-float-2">⭐</div>
+            <div class="rev-float rev-float-3">🍞</div>
+          </div>
+
+          <!-- Avatar 2 -->
+          <div class="rev-avatar-wrap" data-rev="1">
+            <div class="rev-avatar-ring">
+              <div class="rev-avatar-circle" style="background: linear-gradient(135deg, #1A73E8, #1557B0);">U</div>
+            </div>
+            <div class="rev-float rev-float-1">🧁</div>
+            <div class="rev-float rev-float-2">⭐</div>
+            <div class="rev-float rev-float-3">🥖</div>
+          </div>
+
+          <!-- Avatar 3 -->
+          <div class="rev-avatar-wrap" data-rev="2">
+            <div class="rev-avatar-ring">
+              <div class="rev-avatar-circle" style="background: linear-gradient(135deg, #C2185B, #880E4F);">S</div>
+            </div>
+            <div class="rev-float rev-float-1">🌾</div>
+            <div class="rev-float rev-float-2">⭐</div>
+            <div class="rev-float rev-float-3">🍰</div>
+          </div>
+
+          <!-- Avatar 4 -->
+          <div class="rev-avatar-wrap" data-rev="3">
+            <div class="rev-avatar-ring">
+              <div class="rev-avatar-circle" style="background: linear-gradient(135deg, #D88E50, #A0522D);">C</div>
+            </div>
+            <div class="rev-float rev-float-1">🥨</div>
+            <div class="rev-float rev-float-2">⭐</div>
+            <div class="rev-float rev-float-3">🫓</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN EQUIPO (Oculta temporalmente)
+    <section id="equipo" class="equipo-section reveal" aria-label="Nuestro Equipo">
+      <div class="container">
+        <div class="section-header text-center">
+
+          <h2 class="section-header__title-main equipo-title-large">NUESTRO EQUIPO</h2>
+          <span class="section-header__eyebrow">La familia detrás del horno</span>
+        </div>
+
+        <div class="equipo-grid">
+          <div class="equipo-card">
+            <div class="equipo-photo-wrap">
+              <img src="assets/images/logo.png" alt="Miembro del equipo" class="equipo-photo" />
+            </div>
+            <h3 class="equipo-name">NICOLAS CAYECATL</h3>
+            <p class="equipo-role">Director General</p>
+          </div>
+
+          <div class="equipo-card">
+            <div class="equipo-photo-wrap">
+              <img src="assets/images/logo.png" alt="Miembro del equipo" class="equipo-photo" />
+            </div>
+            <h3 class="equipo-name">ALAN CAYECATL</h3>
+            <p class="equipo-role">Director de Operaciones</p>
+          </div>
+
+          <div class="equipo-card">
+            <div class="equipo-photo-wrap">
+              <img src="assets/images/logo.png" alt="Miembro del equipo" class="equipo-photo" />
+            </div>
+            <h3 class="equipo-name">ELVIRA GÓMEZ</h3>
+            <p class="equipo-role">Responsable de Finanzas</p>
+          </div>
+
+          <div class="equipo-card">
+            <div class="equipo-photo-wrap">
+              <img src="assets/images/logo.png" alt="Miembro del equipo" class="equipo-photo" />
+            </div>
+            <h3 class="equipo-name">BETO</h3>
+            <p class="equipo-role">Líder de Producción</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    ========================================== -->
+
+    <!-- ═══════════════════════════════════════
+         ASÍ LO HACEMOS — PROCESO ARTESANAL
+    ═══════════════════════════════════════ -->
+    <!-- ═══════════════════════════════════════
+         ASÍ LO HACEMOS — PROCESO ARTESANAL + FORMULARIO
+    ═══════════════════════════════════════ -->
+    <section id="proceso" class="proceso-section reveal" aria-label="Nuestro proceso artesanal y pedidos">
+      <div class="proceso-center-container">
+
+        <!-- Sticker flotante -->
+        <div class="proceso-bubble">
+          <span>Pedidos para momentos especiales.</span>
+        </div>
+
+        <!-- Texto principal apilado y centrado -->
+        <div class="proceso-main-text">
+          <div class="proceso-row">
+            <span class="proceso-giant">¿TIENES UN</span>
+          </div>
+          <div class="proceso-row">
+            <h2 class="proceso-giant">EVENTO?</h2>
+          </div>
+          <div class="proceso-row">
+            <span class="proceso-offset">LO HACEMOS ESPECIAL</span>
+          </div>
+        </div>
+
+        <!-- Subtítulo / Descripción corta -->
+        <p class="proceso-subtitle-text">Realiza tu pedido para todo tipo de eventos.
+          En La Espiga preparamos pan artesanal hecho a tu medida.</p>
+
+        <!-- Botones CTA de Pedidos y Saber Más -->
+        <div class="proceso-cta-row">
+          <a href="https://wa.me/522211846420" target="_blank" rel="noopener noreferrer" class="btn-cta btn-cta--fill"
+            aria-label="Hacer pedido por WhatsApp">
+            <re-icon icon="bag-shopping" size="14"></re-icon>
+            <span>Pedidos especiales</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER COMPLETO (CENTRADOS) ══ -->
+  <footer class="footer-center">
+    <div class="footer-center-container">
+
+      <!-- Redes Sociales -->
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/share/1BwamGJ5jp/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/panaderialaespiga_spm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@laespigadesanpablo" target="_blank" rel="noopener noreferrer"
+          aria-label="TikTok">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v7.2c0 1.61-.6 3.14-1.71 4.27-1.1 1.11-2.61 1.71-4.22 1.71-1.6 0-3.12-.6-4.23-1.71-1.11-1.13-1.7-2.66-1.7-4.27 0-1.6.6-3.13 1.7-4.25 1.11-1.12 2.63-1.72 4.23-1.72.39 0 .78.03 1.17.1v4.05c-.38-.05-.77-.07-1.16-.07-1.02 0-1.95.42-2.64 1.12-.68.7-.68 1.83 0 2.53.69.7 1.62 1.12 2.64 1.12 1.02 0 1.95-.42 2.64-1.12.69-.7.68-1.83.68-2.53V.02z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Logo Original -->
+      <div class="footer-logo">
+        <img src="assets/images/logo.png" alt="Logo La Espiga" class="footer-logo-img" />
+      </div>
+
+      <!-- Copyright e Info final -->
+      <div class="footer-copyright">
+        <p>Copyright © 2026 La Espiga. Todos los derechos reservados.</p>
+        <p>Panadería Tradicional & Masa Madre Natural.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/reicon/cdn/reicon.min.js" defer></script>
+  <script src="js/main.js?v=9.0" defer></script>
+
+</body>
+
+</html>
